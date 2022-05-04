@@ -70,3 +70,51 @@ $row['department'];
     </tfoot>
 
 </table>
+
+<form action="query.php" method="GET">
+
+<fieldset>
+
+<legend>Contact</legend>
+
+<p>
+
+<label>Name:</label>
+
+<input type="text" name="username" placeholder="your name..." />
+
+ 
+<label>Email:</label>
+
+<input type="email" name="email" placeholder="your email..." />
+
+</p>
+
+<p>
+
+<input type="submit" name="submit" value="Send" />
+
+</p>
+
+</fieldset>
+
+</form>
+
+<?php 
+
+if (isset($_GET['submit'])) {
+    ?>
+    <marquee behavior="" direction="">
+        <h1 class="has-text-danger is-size-3">WELCOM <?=
+            $_GET['username'];
+
+        ?></h1>
+    </marquee>
+
+   
+   <?php 
+}
+
+   ?>
+
+   fm
